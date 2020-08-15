@@ -3,14 +3,11 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
   total = 0
   row_index = 0
-  string_array = []
-  src do |items|
-  src.each do |items|
-    if item.is_a?(String)
-      string_array << items
-    end
-  end
-end
+  sentence = src do |item|
+    items.select { |item| item.is_a?(String) }
+  end.join(" ")
+  
+
 
   while row_index < src.count do
     element_index = 0
