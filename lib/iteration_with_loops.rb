@@ -11,7 +11,7 @@ def join_nested_strings(src)
     end
   end
 end
-      
+
   while row_index < src.count do
     element_index = 0
     strings = ""
