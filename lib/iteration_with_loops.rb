@@ -27,5 +27,5 @@ end
   words << minimum_amount
   count += 1
   end
-  words
+  words.join(" ")
 end
